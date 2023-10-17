@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    /* 0.5 represents the 50% opacity (0 is fully transparent, 1 is fully opaque) */
+}
+
+section nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section nav li a:hover {
+    color: #089da1;
+}
+
+section nav .social_icon i {
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover {
+    color: #089da1;
+    cursor: pointer;
+}
+
+section .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+section .main h1 {
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+}
+
+section .main h1 span {
+    color: #089da1;
+}
+
+section .main p {
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+}
+
+section .main .main_tag .main_btn {
+    background: #089da1;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .main .main_img img {
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+
+/*about*/
+
+.about {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.about .about_image img {
+    width: 800px;
+}
+
+.about .about_tag h1 {
+    font-size: 50px;
+    position: relative;
+    bottom: 35px;
+}
+
+.about .about_tag p {
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about .about_tag .about_btn {
+    padding: 10px 20px;
+    background: #089da1;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}
+
+
+/*arrivals*/
+
+.arrivals {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 35px;
+    margin-bottom: 100px;
+}
+
+.arrivals h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.arrivals .arrivals_box {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card {
+    width: 250px;
+    height: 340px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover {
+    box-shadow: 0 0 5px #089da1;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image {
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover .arrivals_image img {
+    transform: scale(1.1);
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag p {
+    font-family: queen of camelot;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_icon {
+    color: #089da1;
+    margin-bottom: 18px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn {
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color: #000;
+}
+
+/*Blog*/
+
+.blog {
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    margin-bottom: 100px;
+}
+
+.blog h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.blog .blog_box {
+
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog .blog_box .blog_card {
+    margin: 0 auto;
+    width: 450px;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.blog .blog_box .blog_card .blog_img {
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.blog .blog_box .blog_card .blog_img img {
+    width: 450px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog .blog_box .blog_card .blog_tag {
+    padding: 20px;
+}
+
+.blog .blog_box .blog_card .blog_tag h2 {
+    color: #089da1;
+}
+
+.blog .blog_box .blog_card .blog_tag p {
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.blog .blog_box .blog_card .blog_tag .blog_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #089da1;
+    cursor: pointer;
+}
+
+
+/* Maps */
+
+.maps {
+    margin-bottom: 35px;
+}
+
+.maps h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.map_wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optional: Set a specific height to center the map vertically within the viewport */
+}
+
+.map_wraper iframe {
+    width: 960px;
+    height: 640px;
+}
